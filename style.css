@@ -1,0 +1,132 @@
+:root {
+    --clr-primary: hsl(0, 0%, 12%);
+    --clr-secondary: hsl(0, 0%, 20%);
+    --clr-background: hsl(0, 0%, 8%);
+
+    --clr-text-primary: hsl(0, 0%, 100%);
+    --clr-text-secondary: hsl(75, 94%, 57%);
+}
+
+/* Fonts */
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* General styling */
+body {
+    background-color: var(--clr-background);
+    display: grid;
+    place-content: center;
+}
+
+/* Social links card styling */
+.social-links-card {
+    max-width: clamp(327px, 40vh, 384px);
+    padding: clamp(1.5rem, 3.5vh, 2.5rem);
+    margin: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--clr-primary);
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+header > .name {
+    color: var(--clr-text-primary);
+}
+
+header > .location {
+    font-size: 0.875rem;
+    color: var(--clr-text-secondary);
+}
+
+.description {
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    color: var(--clr-text-primary);
+    text-align: center;
+}
+
+.social-links a {
+    margin: 1rem 0 0;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    color: var(--clr-text-primary);
+    background-color: var(--clr-secondary);
+}
+
+.social-links a {
+    text-decoration: none; /* Optional: remove underline for links */
+}
+
+.social-links a:focus {
+    outline: 3px solid var(--clr-text-secondary);
+}
+
+.social-links a:hover {
+    box-shadow: 0 0 0 3px var(--clr-text-secondary);
+    background-color: var(--clr-secondary);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
