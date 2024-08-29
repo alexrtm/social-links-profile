@@ -115,10 +115,7 @@ header > .location {
     border-radius: 0.4rem;
     color: var(--clr-text-primary);
     background-color: var(--clr-secondary);
-}
-
-.social-links a {
-    text-decoration: none; /* Optional: remove underline for links */
+    text-decoration: none;
 }
 
 .social-links a:focus {
